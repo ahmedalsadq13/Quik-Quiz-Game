@@ -1,0 +1,71 @@
+#game
+    overflow: hidden
+    
+.choice-container    
+    display: flex
+    margin-bottom: 0.5rem
+    width: 100%
+    font-size: 1.8rem
+    border: 0.1rem solid rgba(86, 165, 235, 0.25)
+    background-color: white
+    &:hover
+        @extend .hover-effects
+
+.choice-prefix
+    padding: 1.5rem 2.5rem
+    background-color: $main-blue
+    color: white
+
+.choice-text
+    padding: 1.5rem
+    width: 100%
+
+.correct
+    background-color: $green
+    color: #fff
+
+.incorrect 
+    background-color: $red
+    color: #FFF
+
+
+#hud
+    display: flex
+    justify-content: space-between
+    
+
+.hud-prefix
+    text-align: center   
+    font-size: 2rem
+
+.hud-main-text
+    text-align: center    
+
+#progressBar
+    width: 20rem
+    height: 4rem
+    border: 0.3rem solid $main-blue   
+    margin-top: 1.5rem
+
+#progressBarFull
+    height: 100%
+    background-color: $main-blue
+    width: 0%
+
+/* Loader */
+#loader   
+    border: 1.6rem solid white
+    border-radius: 50%
+    border-top-color:#56a5eb
+    width: 12rem
+    height: 12rem
+    animation: spin 2s linear infinite 
+
+@keyframes spin
+    0%
+        transform: rotate(0deg)
+  
+        
+    100%
+        transform: rotate(360deg)
+       
